@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="lib/jquery-1.6.4.js"></script>
+        <script src="lib/jquery.mobile-1.1.0.js"></script>
+        <link href="src/css/jquery.mobile.structure-1.1.0.css" rel="stylesheet"
+        />
+        <link href="src/css/jquery.mobile.theme-1.1.0.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        <div data-role="page" id="page1">
+            <div data-role="header">
+                <h1>Header</h1>
+            </div>
+            <div data-role="content">
+                <div class="div-widget">
+                    <div data-role="collapsible">
+                        <h1>Collapsible Area</h1>
+                        <ul data-role="listview" data-inset="true">
+                            <li id="btnSaltar">
+                                <a href="#page2">Saltar a</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div data-role="footer">
+                <h1>Footer</h1>
+                <select data-role="slider" data-theme="e" data-track-theme="b">
+                    <option value="off">Off</option>
+                    <option value="on">On</option>
+                </select>
+            </div>
+        </div>
+        <div data-role="page" id="page2">
+            <div data-role="header">
+                <h1>Header</h1>
+            </div>
+            <div data-role="content">
+                <div class="div-widget">
+                    <div data-role="fieldcontain">
+                        <label for="txtnom">Introduce nom</label>
+                        <input type="text" id="txtnom" />
+                    </div>
+                    <img src="images/IYNCA7CDJQZCA7H35EBCAFM6LY5CA6ZJIDOCA7QXRX8CAFK1YCVCABWSFGFCAW52UILCAW3A12FCAPRXAD7CAQDQ9IWCA1QRRETCA96S918CA0PH8S7CAF33T1ACA7IWW2UCAHFOG0VCALDSC8Z.jpg"
+                    />
+                    <a data-role="button" id="btnIra" href="#page3" data-theme="b">Ir a</a>
+                </div>
+            </div>
+            <div data-role="footer">
+                <h1>Footer</h1>
+            </div>
+        </div>
+        <div data-role="page" id="page3">
+            <div data-role="header">
+                <h1>Header</h1>
+            </div>
+            <div data-role="content">
+                <div class="div-widget">
+                    <img src="images/Resident Evil Retribution 1280 1021 10.jpg" alt="logo de ryc" width="200"
+                    height="200" />
+                </div>
+            </div>
+            <div data-role="footer">
+                <h1>Footer</h1>
+                <ul data-role="listview" data-inset="true">
+                    <li data-role="list-divider">Botón Regresar</li>
+                    <li>
+                        <a href="#page1">Regreso</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+
+</html>
